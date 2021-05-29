@@ -1,0 +1,10 @@
+body{
+    display: flex;
+}
+
+div{
+    background-color: yellowgreen;
+    width: 200px;
+    height: 200px;
+    border: black solid 2px;
+}
