@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(254,251,226); */
+  }
+/* body{
+    background-color: rgb(254,251,226);
+} */
+  
+  ul{
+    list-style: none;
+  }
+  
+  ul > li >a{
+    text-decoration: none;
+  }
+  
+  
+  .button{
+    /* background-color: blue; */
+  }
+  
+  header{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+    background-color: white;
+  }
+  
+  .header-left > img {
+    height: 100px;
+  }
+  
+  .nav{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav > li > a{
+    margin-right: 20px;
+    color:black;
+    font-size: 20px;
+  }
+
+/* #top{ */
+    /* background-color: aqua; */
+    /* min-height: 100%; */
+    /* background-image: url("./img/homework.jpg"); */
+    /* background-size: auto 100px; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* object-fit: cover; */
+    /* height: 100%; */
+    /* width:100%; */
+    /* background-position: center;  */
+    /* display: flex; */
+    /* flex-direction:column; */
+    /* justify,align-itemsの役割を逆転させる */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: white; */
+   /* } */
+/*  
+  h1{
+    padding-top: 20px;
+    text-align: center;
+  }
+   */
+  h2{
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  
+  #container{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10%;
+    display:table;
+  }
+  
+  .ort{
+    width: auto;
+    border: 1px solid black;
+    background-color: white;
+    display:table-cell;
+  }
+  
+  .ort >img{
+    width: 90%;
+    padding: 10%;
+  }
+  
+  .ort_description{
+    padding: 20px;
+  }
+  
+  .ort_description > ul{
+    line-height: 2.0;
+    /* background-color: lawngreen; */
+    padding: 0;
+    text-align: center;
+  }
+  
+  .youtube{
+    padding: 0;
+    display: block;
+    margin: auto;
+    max-width: auto;
+  }
+  
+  h3{
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .map{
+    display: block;
+    margin: 0 auto;
+    max-width: auto;
+  }
+  
+  .sns > ul{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 30px; */
+    font-size: 20px;
+  }
+  
+  .sns > ul > li{
+    margin: 15px;
+    /* padding: 20px; */
+  }
+  
+  p{
+    text-align:center
+  }
+  
+  form{
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
