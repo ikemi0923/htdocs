@@ -28,6 +28,7 @@
           <input type="hidden" name='nickname' value="<?php echo $nickname?>">
           <input type="hidden" name='email' value="<?php echo $email?>">
           <input type="hidden" name='content' value="<?php echo $content?>">
+          <input type="button" onclick="history.back()" value="戻る">
           <input type="submit" value="次へ進む">
         </form>
     </body>

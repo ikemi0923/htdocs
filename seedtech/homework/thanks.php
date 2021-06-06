@@ -3,8 +3,20 @@
     $email = $_POST['email'];
     $content = $_POST['content'];
 
-    // var_dump($nickname);
-    // デバック
+    // １．データベースに接続する
+    $dsn = 'mysql:dbname=phpkiso;host=localhost';
+    $user = 'root';
+    $password = '';
+    $dbh = new PDO($dsn, $user, $password);
+    $dbh->query('SET NAMES utf8');
+
+    // ２．SQL文を実行する
+    $sql = 'INSERT INTO `survey`(`nickname`,`email`, `content`) VALUES ("'. $nickname.'", "'.$email.'", "'.$content.'")';
+    $stmt = $dbh->prepare($sql);
+    $stmt->execute();
+
+    // ３．データベースを切断する
+    $dbh = null;
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -20,5 +32,8 @@
         <p><?php echo $nickname;?></p>
         <p><?php echo $email;?></p>
         <p><?php echo $content;?></p>
+        <h3>
+        <input type="button" onclick="location.href='index.php';" value="戻る">
+        </h3>
     </body>
     </html>

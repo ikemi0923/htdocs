@@ -79,13 +79,19 @@
     padding: 10px 30px;
     display: flex;
     flex-direction: row;
-    height: auto;
-    width: auto;
-    margin: auto;
+    /* height: auto; */
+    /* width: auto; */
+    /* margin: auto; */
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10%;
-    display:table;
+    /* display:table; */
+  }
+
+  @media screen and (max-width:768px){
+      #container{
+          flex-direction: column;
+      }
   }
   
   .ort{
